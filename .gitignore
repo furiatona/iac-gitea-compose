@@ -1,0 +1,15 @@
+# Gitea specific
+/data
+/gitea
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+
+# Ignore backup files
+*~
