@@ -31,6 +31,20 @@ cp env.sample .env
 docker compose up -d
 ```
 
+### Create an Admin User in the Gitea Container
+
+To create an admin user, first log in to the running Gitea container:
+
+```sh
+docker compose exec gitea bash
+```
+
+Then run the following command inside the container (replace the values as needed):
+
+```sh
+gitea admin user create --username admin --password yourpassword --email admin@example.com --admin
+```
+
 Gitea will be available at [http://localhost:3000](http://localhost:3000).
 
 ### Stopping Gitea
