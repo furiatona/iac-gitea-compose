@@ -45,7 +45,7 @@ Then run the following command inside the container (replace the values as neede
 gitea admin user create --username admin --password yourpassword --email admin@example.com --admin
 ```
 
-Gitea will be available at [http://localhost:3000](http://localhost:3000).
+After setting up the NGINX proxy, your Gitea instance will be available at [http://yourdomain/gitea](http://yourdomain/gitea).
 
 ### Stopping Gitea
 
